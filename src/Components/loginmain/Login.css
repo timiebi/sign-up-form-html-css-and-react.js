@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+
+}
+.bgd{
+    display: block;
+    width: 100%;
+    position: fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bgm{
+    display: none;
+}
+img{
+    position: absolute;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+.container{
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+h4{
+    font-weight: 700;
+    color: rgb(97, 96, 96);
+    font-size: 1.3rem;
+    width: 80%;
+    padding-left: .7em;
+}
+p{
+    margin-top: 2em;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    color: rgb(97, 96, 96);
+}
+.intro{
+    width: 95%;
+    margin: auto;
+    background-color: hsl(248, 32%, 49%);
+    margin-top: 3em;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.try{
+    width: 75%;
+    padding: 1.2em;
+    margin-left: 2em;
+    color: #fff;
+    
+}
+span{
+    color: rgb(235, 90, 46);
+}
+form{
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    margin-top: 2em;
+    border-radius: 8px;
+}
+input{
+    padding: 1em;
+    width: 85%;
+    margin-top: 1em;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+:placeholder-shown{
+    font-weight: 700;
+    font-size: 1rem;
+}
+button{
+    margin: 1em;
+    padding: 1em;
+    margin-left: 1em;
+    width: 85%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: hsl(154, 59%, 51%);
+}
+.terms{
+    margin: auto;
+    font-size: .8rem;
+    width: 90%;
+    padding-bottom: 1.5em;
+}
+.red{
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
+@media (max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 3.5em;
+        margin: auto;
+        padding-top: 2em;
+    }
+    h4{
+        position: relative;
+        margin-top: 1em;
+        width: 80%;
+    }
+    p{
+        margin-top: 2em;
+    }
+    .try{
+        width: 90%;
+        margin: 1em;
+    }
+    .intro{
+        margin-top: 2.5em;
+    }
+    .bgd{
+        display: none;
+    }
+    .bgm{
+        display: block;
+    }
+}
+@media (min-width: 1440px){
+    main{
+        max-width: 100%;
+    }
+    .container{
+        width: 100%;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        
+    }
+    .bgm{
+        display: none;
+    }
+    .bgd{
+        display: block;
+        width: 100%;
+        position: fixed;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .login_intro_container{
+        width: 100%;
+        padding: 3em;
+        margin: 3em;
+    }
+    p{
+        width: 100%;
+    }
+    .terms{
+        color: black;
+        margin: auto;
+        font-size: .8rem;
+        width: 90%;
+        padding-bottom: 1.5em;
+    }
+    form{
+        padding: 1em;
+    }
+}
